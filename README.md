@@ -1,2 +1,133 @@
-# -e-motors-web
-        The Automotive World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E MOTORS - The Automotive World</title>
+    <script src="https://tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        .gold-text { color: #d4af37; }
+        .bg-gold { background-color: #d4af37; }
+        .border-gold { border-color: #d4af37; }
+        .gold-gradient { background: linear-gradient(135deg, #b8962e 0%, #d4af37 100%); }
+    </style>
+</head>
+<body class="bg-[#0b0c10] text-white font-sans overflow-x-hidden">
+
+    <!-- 1. HERO SECTION & NAVBAR -->
+    <header class="relative h-screen w-full flex flex-col justify-between overflow-hidden">
+        <!-- Background Video/Cinematic Image Placeholder -->
+        <div class="absolute inset-0 z-0 bg-black">
+            <!-- يمكنك استبدال الرابط برابط فيديو MP4 سينمائي لاحقاً -->
+            <img src="https://unsplash.com" class="w-full h-full object-cover opacity-40" alt="Cinematic Car Background">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c10] via-transparent to-black opacity-80"></div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="relative z-10 flex justify-between items-center px-6 md:px-12 py-6 backdrop-blur-md bg-black/10 border-b border-gray-900">
+            <div class="flex items-center space-x-2">
+                <span class="gold-text font-black text-2xl tracking-wider">E MOTORS</span>
+            </div>
+            <ul class="hidden lg:flex space-x-8 text-sm font-medium tracking-wide text-gray-300">
+                <li><a href="#" class="hover:text-[#d4af37] transition">Explore</a></li>
+                <li><a href="#" class="hover:text-[#d4af37] transition">Brands</a></li>
+                <li><a href="#" class="hover:text-[#d4af37] transition">Vehicles</a></li>
+                <li><a href="#" class="hover:text-[#d4af37] transition">Business Hub</a></li>
+                <li><a href="#" class="hover:text-[#d4af37] transition">Automotive World</a></li>
+            </ul>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-sm font-semibold hover:text-[#d4af37] transition mr-2">EN <i class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
+                <button class="bg-gold text-black px-5 py-2.5 rounded font-bold text-xs uppercase tracking-wider hover:bg-[#b8962e] transition shadow-lg shadow-gold/20">
+                    List Your Car
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 flex-1 flex items-center px-6 md:px-12">
+            <div class="max-w-2xl space-y-6">
+                <p class="gold-text tracking-widest text-xs font-bold uppercase flex items-center gap-2">
+                    <span class="w-8 h-[1px] bg-gold"></span> Welcome to the Automotive World
+                </p>
+                <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-none uppercase">
+                    THE AUTOMOTIVE <br> <span class="gold-text">WORLD</span>
+                </h1>
+                <p class="text-gray-400 text-base md:text-lg max-w-lg leading-relaxed">
+                    The all-in-one platform for everything automotive. Explore. Compare. Buy. Sell. Finance. All in one place.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <button class="gold-gradient text-black px-8 py-4 rounded font-bold text-sm uppercase tracking-wider hover:opacity-90 transition flex items-center gap-3">
+                        Start Exploring <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                    <button class="flex items-center gap-3 text-white bg-white/5 border border-gray-700/60 px-8 py-4 rounded font-bold text-sm uppercase tracking-wider hover:bg-white/10 transition backdrop-blur-sm">
+                        <i class="fa-solid fa-circle-play gold-text text-lg"></i> Watch Video
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. EXPLORE BY BRAND -->
+    <section class="py-20 px-6 md:px-12 border-t border-gray-900 bg-gradient-to-b from-[#0b0c10] to-[#12141c]">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <p class="gold-text text-xs font-bold uppercase tracking-wider mb-2">Luxury & Performance</p>
+                    <h2 class="text-3xl font-bold uppercase tracking-tight">Explore By Brand</h2>
+                </div>
+                <a href="#" class="text-sm font-semibold text-gray-400 hover:text-[#d4af37] transition">View All <i class="fa-solid fa-arrow-right text-xs ml-1"></i></a>
+            </div>
+            
+            <!-- Grid of Luxury Brand Portals -->
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <!-- Brand Item -->
+                <div class="group relative bg-[#1c1e27] border border-gray-800 rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:border-gold hover:-translate-y-1">
+                    <div class="text-4xl mb-3 text-gray-400 group-hover:text-white transition"><i class="fa-solid fa-car-side"></i></div>
+                    <span class="font-bold text-sm tracking-wide text-gray-300 group-hover:text-white">TOYOTA</span>
+                    <span class="absolute bottom-3 text-[10px] gold-text font-bold tracking-widest opacity-0 group-hover:opacity-100 transition duration-300">ENTER WORLD</span>
+                </div>
+                <div class="group relative bg-[#1c1e27] border border-gray-800 rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:border-gold hover:-translate-y-1">
+                    <div class="text-4xl mb-3 text-gray-400 group-hover:text-white transition"><i class="fa-solid fa-crown"></i></div>
+                    <span class="font-bold text-sm tracking-wide text-gray-300 group-hover:text-white">LEXUS</span>
+                    <span class="absolute bottom-3 text-[10px] gold-text font-bold tracking-widest opacity-0 group-hover:opacity-100 transition duration-300">ENTER WORLD</span>
+                </div>
+                <div class="group relative bg-[#1c1e27] border border-gray-800 rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:border-gold hover:-translate-y-1">
+                    <div class="text-4xl mb-3 text-gray-400 group-hover:text-white transition"><i class="fa-solid fa-shield-halved"></i></div>
+                    <span class="font-bold text-sm tracking-wide text-gray-300 group-hover:text-white">MERCEDES</span>
+                    <span class="absolute bottom-3 text-[10px] gold-text font-bold tracking-widest opacity-0 group-hover:opacity-100 transition duration-300">ENTER WORLD</span>
+                </div>
+                <div class="group relative bg-[#1c1e27] border border-gray-800 rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:border-gold hover:-translate-y-1">
+                    <div class="text-4xl mb-3 text-gray-400 group-hover:text-white transition"><i class="fa-solid fa-gem"></i></div>
+                    <span class="font-bold text-sm tracking-wide text-gray-300 group-hover:text-white">BMW</span>
+                    <span class="absolute bottom-3 text-[10px] gold-text font-bold tracking-widest opacity-0 group-hover:opacity-100 transition duration-300">ENTER WORLD</span>
+                </div>
+                <div class="group relative bg-[#1c1e27] border border-gray-800 rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:border-gold hover:-translate-y-1">
+                    <div class="text-4xl mb-3 text-gray-400 group-hover:text-white transition"><i class="fa-solid fa-bolt"></i></div>
+                    <span class="font-bold text-sm tracking-wide text-gray-300 group-hover:text-white">PORSCHE</span>
+                    <span class="absolute bottom-3 text-[10px] gold-text font-bold tracking-widest opacity-0 group-hover:opacity-100 transition duration-300">ENTER WORLD</span>
+                </div>
+            </div>
+        </div>
+    
+
+    <!-- 3. FIND YOUR NEXT CAR (CATEGORIES) -->
+    <section class="py-20 px-6 md:px-12 bg-[#12141c]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <p class="gold-text text-xs font-bold uppercase tracking-wider mb-2">Tailored Categories</p>
+                <h2 class="text-3xl font-bold uppercase tracking-tight">Find Your Next Car</h2>
+            </div>
+
+            <!-- Big Cinematic Category Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="group relative h-80 rounded-xl overflow-hidden cursor-pointer shadow-xl">
+                    <img src="https://unsplash.com" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" alt="SUV">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <h3 class="text-2xl font-black tracking-wide uppercase group-hover:gold-text transition">🚙 SUV</h3>
+                        <p class="text-xs text-gray-400 mt-1">Power and comfort for family adventures</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
