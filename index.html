@@ -1,111 +1,224 @@
-<!-- CHOOSE YOUR JOURNEY SECTION -->
-<section class="py-20 bg-black relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center mb-12">
-            <span class="gold-text tracking-widest text-xs font-bold uppercase">ENTER THE AUTOMOTIVE WORLD</span>
-            <h2 class="text-3xl md:text-5xl font-black text-white mt-2 tracking-wide uppercase">CHOOSE YOUR JOURNEY</h2>
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E MOTORS - The Automotive Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+        }
+        .gold-text {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans antialiased selection:bg-gold selection:text-black">
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-black py-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover opacity-40 scale-105 animate-pulse duration-1000" alt="Hero Background">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="gold-text tracking-widest text-xs md:text-sm font-bold uppercase mb-4 block">WELCOME TO E MOTORS</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black tracking-wider uppercase mb-6">
+                THE AUTOMOTIVE <br><span class="gold-text">ECOSYSTEM</span>
+            </h1>
+            <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-10">
+                The all-in-one platform for everything automotive. Explore, buy, finance, and connect globally.
+            </p>
             
-            <!-- 1. NEW CARS -->
-            <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
-                <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="New Cars">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
-                <!-- Smoke overlay effect -->
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent transition-opacity duration-700 pointer-events-none"></div>
-                <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
-                    <span class="text-xs font-bold gold-text tracking-widest uppercase">01 / FEATURED</span>
-                    <div>
-                        <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">NEW CARS</h3>
-                        <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
-                            ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+                <a href="car-details.html" class="gold-gradient text-black px-7 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider hover:opacity-90 transition inline-flex items-center gap-3 shadow-lg">
+                    Start Exploring <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
             </div>
-
-            <!-- 2. USED CARS -->
-            <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
-                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Used Cars">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent transition-opacity duration-700 pointer-events-none"></div>
-                <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
-                    <span class="text-xs font-bold gold-text tracking-widest uppercase">02 / CERTIFIED</span>
-                    <div>
-                        <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">USED CARS</h3>
-                        <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
-                            ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3. LUXURY (Rolls Royce Background) -->
-            <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
-                <img src="https://images.unsplash.com/photo-1631295868223-63265b40d9e4?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Luxury Cars">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent transition-opacity duration-700 pointer-events-none"></div>
-                <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
-                    <span class="text-xs font-bold gold-text tracking-widest uppercase">03 / EXCLUSIVE</span>
-                    <div>
-                        <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">LUXURY</h3>
-                        <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
-                            ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4. ELECTRIC -->
-            <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
-                <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Electric Cars">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent transition-opacity duration-700 pointer-events-none"></div>
-                <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
-                    <span class="text-xs font-bold gold-text tracking-widest uppercase">04 / FUTURE</span>
-                    <div>
-                        <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">ELECTRIC</h3>
-                        <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
-                            ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 5. COMMERCIAL -->
-            <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
-                <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Commercial Cars">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent transition-opacity duration-700 pointer-events-none"></div>
-                <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
-                    <span class="text-xs font-bold gold-text tracking-widest uppercase">05 / BUSINESS</span>
-                    <div>
-                        <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">COMMERCIAL</h3>
-                        <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
-                            ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 6. FINANCE -->
-            <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
-                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Finance">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent transition-opacity duration-700 pointer-events-none"></div>
-                <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
-                    <span class="text-xs font-bold gold-text tracking-widest uppercase">06 / SOLUTIONS</span>
-                    <div>
-                        <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">FINANCE</h3>
-                        <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
-                            ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- CHOOSE YOUR JOURNEY SECTION -->
+    <section class="py-20 bg-black relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="gold-text tracking-widest text-xs font-bold uppercase">ENTER THE AUTOMOTIVE WORLD</span>
+                <h2 class="text-3xl md:text-5xl font-black text-white mt-2 tracking-wide uppercase">CHOOSE YOUR JOURNEY</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 1. NEW CARS -->
+                <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="New Cars">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
+                        <span class="text-xs font-bold gold-text tracking-widest uppercase">01 / FEATURED</span>
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">NEW CARS</h3>
+                            <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
+                                ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. USED CARS -->
+                <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Used Cars">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
+                        <span class="text-xs font-bold gold-text tracking-widest uppercase">02 / CERTIFIED</span>
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">USED CARS</h3>
+                            <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
+                                ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. LUXURY -->
+                <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1631295868223-63265b40d9e4?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Luxury Cars">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
+                        <span class="text-xs font-bold gold-text tracking-widest uppercase">03 / EXCLUSIVE</span>
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">LUXURY</h3>
+                            <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
+                                ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. ELECTRIC -->
+                <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Electric Cars">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
+                        <span class="text-xs font-bold gold-text tracking-widest uppercase">04 / FUTURE</span>
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">ELECTRIC</h3>
+                            <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
+                                ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. COMMERCIAL -->
+                <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Commercial Cars">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
+                        <span class="text-xs font-bold gold-text tracking-widest uppercase">05 / BUSINESS</span>
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">COMMERCIAL</h3>
+                            <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
+                                ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. FINANCE -->
+                <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Finance">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
+                        <span class="text-xs font-bold gold-text tracking-widest uppercase">06 / SOLUTIONS</span>
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">FINANCE</h3>
+                            <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
+                                ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPLORE BY BRAND SECTION -->
+    <section class="py-20 bg-zinc-950 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="gold-text tracking-widest text-xs font-bold uppercase">GLOBAL MANUFACTURERS</span>
+                    <h2 class="text-3xl md:text-5xl font-black text-white mt-2 uppercase tracking-wide">EXPLORE BY BRAND</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-car-side text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">Mercedes</span>
+                </a>
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-car text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">BMW</span>
+                </a>
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-car-rear text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">Toyota</span>
+                </a>
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-car-tunnel text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">Nissan</span>
+                </a>
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-truck-pickup text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">Ford</span>
+                </a>
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-truck-monster text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">Land Rover</span>
+                </a>
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-bolt text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">Tesla</span>
+                </a>
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-gem text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">Lexus</span>
+                </a>
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-car-burst text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">Hyundai</span>
+                </a>
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-car-on text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">Kia</span>
+                </a>
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-truck-front text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">GMC</span>
+                </a>
+                <a href="car-details.html" class="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center hover:bg-white/10 hover:border-gold/50 transition-all duration-300 group">
+                    <i class="fa-solid fa-crown text-3xl text-gray-400 group-hover:text-gold transition-colors mb-3"></i>
+                    <span class="text-sm font-bold text-white group-hover:gold-text transition-colors uppercase">Cadillac</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
