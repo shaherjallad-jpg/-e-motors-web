@@ -10,90 +10,47 @@
         body { background-color: #000; color: #fff; }
         .hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop') no-repeat center center/cover; }
         .hero::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.7); z-index: 1; }
-        .hero-content { position: relative; z-index: 2; max-width: 800px; }
-        .gold-text { background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; }
-        h1 { font-size: 2.8rem; margin: 15px 0; text-transform: uppercase; letter-spacing: 2px; }
-        p { color: #ccc; font-size: 1.1rem; margin-bottom: 30px; }
-        .btn { display: inline-block; background: linear-gradient(135deg, #BF953F, #AA771C); color: #000; padding: 15px 35px; border-radius: 12px; font-weight: bold; text-decoration: uppercase; text-transform: uppercase; text-decoration: none; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
-        .section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
-        .section-title { text-align: center; margin-bottom: 40px; }
-        .section-title h2 { font-size: 2.2rem; text-transform: uppercase; margin-top: 5px; letter-spacing: 1px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { position: relative; height: 350px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); text-decoration: none; color: #fff; display: flex; flex-direction: column; justify-content: flex-end; padding: 25px; background-size: cover; background-position: center; }
-        .card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2)); z-index: 1; }
-        .card > * { position: relative; z-index: 2; }
-        .card h3 { font-size: 1.5rem; margin-top: 10px; text-transform: uppercase; }
-        .brands-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
-        @media(min-width: 768px) { .brands-grid { grid-template-columns: repeat(4, 1fr); } }
-        .brand-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 25px; border-radius: 16px; text-align: center; text-decoration: none; color: #fff; display: block; transition: 0.3s; }
-        .brand-box:hover { border-color: #D4AF37; background: rgba(255,255,255,0.1); }
-        .brand-box i { font-size: 2rem; color: #aaa; margin-bottom: 10px; display: block; }
-        .brand-box span { font-size: 0.9rem; font-weight: bold; text-transform: uppercase; }
+        .hero-content { position: relative; z-index: 10; max-width: 800px; }
+        .gold-text { color: #D4AF37; font-weight: bold; }
+        h1 { font-size: 2.5rem; margin: 15px 0; text-transform: uppercase; }
+        p { color: #ccc; font-size: 1rem; margin-bottom: 30px; }
+        .btn { position: relative; z-index: 20; display: inline-block; background: #D4AF37; color: #000; padding: 15px 30px; border-radius: 10px; font-weight: bold; text-decoration: none; text-transform: uppercase; cursor: pointer; }
+        .section { padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 30px; }
+        .grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        @media(min-width: 768px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+        .card { position: relative; height: 300px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.2); text-decoration: none; color: #fff; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; background-size: cover; background-position: center; }
+        .card::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.6); z-index: 1; }
+        .card > * { position: relative; z-index: 5; }
+        .card h3 { font-size: 1.3rem; margin-top: 5px; text-transform: uppercase; }
+        .card-btn { display: inline-block; background: #D4AF37; color: #000; padding: 8px 15px; border-radius: 6px; font-size: 0.8rem; font-weight: bold; text-decoration: none; margin-top: 10px; }
     </style>
 </head>
 <body>
 
-    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
-            <span class="gold-text" style="font-size: 0.9rem; letter-spacing: 3px;">WELCOME TO E MOTORS</span>
-            <h1>THE AUTOMOTIVE <br><span class="gold-text">ECOSYSTEM</span></h1>
+            <span class="gold-text">WELCOME TO E MOTORS</span>
+            <h1>THE AUTOMOTIVE ECOSYSTEM</h1>
             <p>The all-in-one platform for everything automotive. Explore, buy, finance, and connect globally.</p>
-            <a href="car-details.html" class="btn">Start Exploring <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem; margin-left: 8px;"></i></a>
+            <a href="car-details.html" class="btn">Start Exploring</a>
         </div>
     </section>
 
-    <!-- CHOOSE YOUR JOURNEY SECTION -->
     <section class="section">
         <div class="section-title">
-            <span class="gold-text" style="font-size: 0.8rem; letter-spacing: 2px;">ENTER THE AUTOMOTIVE WORLD</span>
             <h2>CHOOSE YOUR JOURNEY</h2>
         </div>
 
         <div class="grid">
             <a href="car-details.html" class="card" style="background-image: url('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1000&auto=format&fit=crop');">
-                <span class="gold-text" style="font-size: 0.75rem; letter-spacing: 2px;">01 / FEATURED</span>
                 <h3>NEW CARS</h3>
+                <span class="card-btn">ENTER</span>
             </a>
             <a href="car-details.html" class="card" style="background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000&auto=format&fit=crop');">
-                <span class="gold-text" style="font-size: 0.75rem; letter-spacing: 2px;">02 / CERTIFIED</span>
                 <h3>USED CARS</h3>
+                <span class="card-btn">ENTER</span>
             </a>
-            <a href="car-details.html" class="card" style="background-image: url('https://images.unsplash.com/photo-1631295868223-63265b40d9e4?q=80&w=1000&auto=format&fit=crop');">
-                <span class="gold-text" style="font-size: 0.75rem; letter-spacing: 2px;">03 / EXCLUSIVE</span>
-                <h3>LUXURY</h3>
-            </a>
-            <a href="car-details.html" class="card" style="background-image: url('https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1000&auto=format&fit=crop');">
-                <span class="gold-text" style="font-size: 0.75rem; letter-spacing: 2px;">04 / FUTURE</span>
-                <h3>ELECTRIC</h3>
-            </a>
-            <a href="car-details.html" class="card" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1000&auto=format&fit=crop');">
-                <span class="gold-text" style="font-size: 0.75rem; letter-spacing: 2px;">05 / BUSINESS</span>
-                <h3>COMMERCIAL</h3>
-            </a>
-            <a href="car-details.html" class="card" style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1000&auto=format&fit=crop');">
-                <span class="gold-text" style="font-size: 0.75rem; letter-spacing: 2px;">06 / SOLUTIONS</span>
-                <h3>FINANCE</h3>
-            </a>
-        </div>
-    </section>
-
-    <!-- EXPLORE BY BRAND SECTION -->
-    <section class="section" style="border-top: 1px solid rgba(255,255,255,0.1);">
-        <div class="section-title" style="text-align: left; margin-bottom: 30px;">
-            <span class="gold-text" style="font-size: 0.8rem; letter-spacing: 2px;">GLOBAL MANUFACTURERS</span>
-            <h2>EXPLORE BY BRAND</h2>
-        </div>
-
-        <div class="brands-grid">
-            <a href="car-details.html" class="brand-box"><i class="fa-solid fa-car-side"></i><span>Mercedes</span></a>
-            <a href="car-details.html" class="brand-box"><i class="fa-solid fa-car"></i><span>BMW</span></a>
-            <a href="car-details.html" class="brand-box"><i class="fa-solid fa-car-rear"></i><span>Toyota</span></a>
-            <a href="car-details.html" class="brand-box"><i class="fa-solid fa-car-tunnel"></i><span>Nissan</span></a>
-            <a href="car-details.html" class="brand-box"><i class="fa-solid fa-truck-pickup"></i><span>Ford</span></a>
-            <a href="car-details.html" class="brand-box"><i class="fa-solid fa-truck-monster"></i><span>Land Rover</span></a>
-            <a href="car-details.html" class="brand-box"><i class="fa-solid fa-bolt"></i><span>Tesla</span></a>
-            <a href="car-details.html" class="brand-box"><i class="fa-solid fa-gem"></i><span>Lexus</span></a>
         </div>
     </section>
 
