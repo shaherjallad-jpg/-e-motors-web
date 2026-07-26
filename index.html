@@ -30,9 +30,55 @@
     </style>
 </head>
 <body class="bg-black text-white font-sans antialiased">
-    <div class="py-20 text-center">
-        <h1 class="text-4xl font-bold gold-text">E MOTORS</h1>
-        <p class="text-gray-400 mt-2">Loading cinematic experience...</p>
-    </div>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-black py-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover opacity-40 scale-105" alt="Hero Background">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="gold-text tracking-widest text-xs md:text-sm font-bold uppercase mb-4 block">WELCOME TO E MOTORS</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black tracking-wider uppercase mb-6">
+                THE AUTOMOTIVE <br><span class="gold-text">ECOSYSTEM</span>
+            </h1>
+            <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-10">
+                The all-in-one platform for everything automotive. Explore, buy, finance, and connect globally.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+                <a href="car-details.html" class="gold-gradient text-black px-7 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider hover:opacity-90 transition inline-flex items-center gap-3 shadow-lg">
+                    Start Exploring <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHOOSE YOUR JOURNEY SECTION -->
+    <section class="py-20 bg-black relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="gold-text tracking-widest text-xs font-bold uppercase">ENTER THE AUTOMOTIVE WORLD</span>
+                <h2 class="text-3xl md:text-5xl font-black text-white mt-2 tracking-wide uppercase">CHOOSE YOUR JOURNEY</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative h-96 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-gold/50 transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1631295868223-63265b40d9e4?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Luxury">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 group-hover:bg-black/30 transition-all duration-500"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
+                        <span class="text-xs font-bold gold-text tracking-widest uppercase">01 / EXCLUSIVE</span>
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-white mb-4 uppercase tracking-wider">LUXURY</h3>
+                            <a href="car-details.html" class="inline-flex items-center gap-2 gold-gradient text-black px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
+                                ENTER <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
