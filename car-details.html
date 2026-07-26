@@ -1,13 +1,3 @@
-الأخطاء الموجودة في الأكواد تتعلق بشكل رئيسي بـ عدم إغلاق وسوم HTML بشكل صحيح (Unclosed Tags)، بالإضافة إلى بعض المشاكل في روابط الأكواد الخارجية.
-إليك تفصيل الأخطاء وكيفية إصلاحها:
-1. الأخطاء البرمجية (الإغلاق المفقود):
- * وسم الـ Section الأول: قسم VEHICLE HERO & GALLERY SECTION يبدأ بـ <section> ولكنه لم يُغلق بوسم </section> قبل بدء القسم الذي يليه.
- * وسم الـ Section الثاني: قسم METRICS & TECHNICAL SPECIFICATIONS BAR يبدأ بـ <section> ولم يُغلق بـ </section>.
- * وسم الـ Section الثالث: قسم VEHICLE OVERVIEW & HIGHLIGHTS يبدأ بـ <section> ولم يُغلق بـ </section>.
-2. ملاحظات تقنية أخرى:
- * روابط الـ CSS: الروابط الخاصة بـ jsdelivr و cloudflare في الأعلى مجهولة أو غير صحيحة كروابط ملفات CSS (غالباً أنت تستخدم مكتبة Tailwind CSS أو FontAwesome، ولكل منها روابط صحيحة خاصة بها).
- * أيقونات FontAwesome: الكود يحتوي على أيقونات مثل fa-solid fa-paper-plane ولكن لا يوجد رابط لـ FontAwesome محمل في صفحة الهيد (<head>).
-الكود بعد التصحيح الكامل:
 <!DOCTYPE html>
 <html lang="en">
 <head>
