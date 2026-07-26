@@ -1,11 +1,14 @@
+هذا الكود يعاني من نفس المشكلة السابقة وهي عدم إغلاق وسوم الـ section مما يسبب تداخلاً في بنية الصفحة وهيكلتها.
+إليك الكود كاملاً وصحيحاً مع إغلاق جميع الأقسام (</section>) بشكل دقيق، مع إضافة روابط Tailwind و FontAwesome المطلوبة ليعمل التصميم والأيقونات بشكل مثالي:
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E MOTORS - The Automotive World</title>
-    <link rel="stylesheet" href="https://jsdelivr.net">
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- تم إضافة مكتبة Tailwind CSS و FontAwesome لتظهر الأيقونات والتصميم بدقة -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .gold-text { color: #d4af37 !important; }
         .bg-gold { background-color: #d4af37 !important; }
@@ -18,7 +21,7 @@
     <!-- 01 HERO SECTION & NAVBAR -->
     <header class="relative w-full flex flex-col justify-between overflow-hidden" style="min-height: 100vh;">
         <div class="absolute inset-0 z-0 bg-black">
-            <img src="https://unsplash.com" class="w-full h-full object-cover opacity-40" alt="Cinematic Car Background">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" class="w-full h-full object-cover opacity-40" alt="Cinematic Car Background">
             <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c10] via-transparent to-black opacity-80"></div>
         </div>
 
@@ -87,7 +90,7 @@
                 </div>
             </div>
         </div>
-    
+    </section> <!-- تمت إضافة إغلاق القسم هنا -->
 
     <!-- 03 EXPLORE CATEGORIES -->
     <section class="py-20 px-6 md:px-12 bg-gray-900 border-t border-gray-800">
@@ -98,26 +101,26 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="relative h-80 rounded-xl overflow-hidden cursor-pointer bg-black">
-                    <img src="https://unsplash.com" class="w-full h-full object-cover opacity-60" alt="SUV">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf" class="w-full h-full object-cover opacity-60" alt="SUV">
                     <div class="absolute bottom-6 left-6">
                         <h3 class="text-2xl font-black tracking-wide uppercase text-white">🚙 SUV</h3>
                     </div>
                 </div>
                 <div class="relative h-80 rounded-xl overflow-hidden cursor-pointer bg-black">
-                    <img src="https://unsplash.com" class="w-full h-full object-cover opacity-60" alt="Sedan">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e" class="w-full h-full object-cover opacity-60" alt="Sedan">
                     <div class="absolute bottom-6 left-6">
                         <h3 class="text-2xl font-black tracking-wide uppercase text-white">🚗 Sedan</h3>
                     </div>
                 </div>
                 <div class="relative h-80 rounded-xl overflow-hidden cursor-pointer bg-black">
-                    <img src="https://unsplash.com" class="w-full h-full object-cover opacity-60" alt="Electric">
+                    <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399" class="w-full h-full object-cover opacity-60" alt="Electric">
                     <div class="absolute bottom-6 left-6">
                         <h3 class="text-2xl font-black tracking-wide uppercase text-white">⚡ Electric</h3>
                     </div>
                 </div>
             </div>
         </div>
-    
+    </section> <!-- تمت إضافة إغلاق القسم هنا -->
 
     <!-- 04 FEATURED CARS -->
     <section class="py-20 px-6 md:px-12 bg-gray-900 border-t border-gray-800">
@@ -129,7 +132,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700">
                     <div class="relative h-56">
-                        <img src="https://unsplash.com" class="w-full h-full object-cover" alt="Vehicle">
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6" class="w-full h-full object-cover" alt="Vehicle">
                     </div>
                     <div class="p-6 space-y-4">
                         <div>
@@ -153,9 +156,30 @@
                 </div>
             </div>
         </div>
-    
+    </section> <!-- تمت إضافة إغلاق القسم هنا -->
 
     <!-- 05 WHY E MOTORS -->
     <section class="py-20 px-6 md:px-12 bg-gray-900 border-t border-gray-800">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
+            <div>
+                <p class="gold-text text-xs font-bold uppercase tracking-wider mb-2">Why Choose Us</p>
+                <h2 class="text-3xl font-bold uppercase tracking-tight mb-4">The E MOTORS Experience</h2>
+                <p class="text-gray-400 leading-relaxed">We redefine the automotive marketplace by offering transparent pricing, certified multi-point inspections, and seamless digital financing options tailored to your lifestyle.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 text-center">
+                    <p class="text-3xl font-black gold-text mb-1">100%</p>
+                    <p class="text-xs text-gray-400 uppercase font-semibold">Certified Cars</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 text-center">
+                    <p class="text-3xl font-black gold-text mb-1">24/7</p>
+                    <p class="text-xs text-gray-400 uppercase font-semibold">Support Hub</p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- تمت إضافة إغلاق القسم هنا -->
+
+</body>
+</html>
+
+
