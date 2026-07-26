@@ -1,11 +1,22 @@
+الأخطاء الموجودة في الأكواد تتعلق بشكل رئيسي بـ عدم إغلاق وسوم HTML بشكل صحيح (Unclosed Tags)، بالإضافة إلى بعض المشاكل في روابط الأكواد الخارجية.
+إليك تفصيل الأخطاء وكيفية إصلاحها:
+1. الأخطاء البرمجية (الإغلاق المفقود):
+ * وسم الـ Section الأول: قسم VEHICLE HERO & GALLERY SECTION يبدأ بـ <section> ولكنه لم يُغلق بوسم </section> قبل بدء القسم الذي يليه.
+ * وسم الـ Section الثاني: قسم METRICS & TECHNICAL SPECIFICATIONS BAR يبدأ بـ <section> ولم يُغلق بـ </section>.
+ * وسم الـ Section الثالث: قسم VEHICLE OVERVIEW & HIGHLIGHTS يبدأ بـ <section> ولم يُغلق بـ </section>.
+2. ملاحظات تقنية أخرى:
+ * روابط الـ CSS: الروابط الخاصة بـ jsdelivr و cloudflare في الأعلى مجهولة أو غير صحيحة كروابط ملفات CSS (غالباً أنت تستخدم مكتبة Tailwind CSS أو FontAwesome، ولكل منها روابط صحيحة خاصة بها).
+ * أيقونات FontAwesome: الكود يحتوي على أيقونات مثل fa-solid fa-paper-plane ولكن لا يوجد رابط لـ FontAwesome محمل في صفحة الهيد (<head>).
+الكود بعد التصحيح الكامل:
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Range Rover Sport 2024 - E MOTORS</title>
-    <link rel="stylesheet" href="https://jsdelivr.net">
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- تم إضافة روابط Tailwind و FontAwesome بشكل صحيح -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .gold-text { color: #d4af37; }
         .bg-gold { background-color: #d4af37; }
@@ -34,15 +45,15 @@
         <!-- Left & Center: Interactive Large Media (2 Columns) -->
         <div class="lg:col-span-2 space-y-4">
             <div class="relative h-[450px] rounded-2xl overflow-hidden shadow-2xl border border-gray-900">
-                <img src="https://unsplash.com" class="w-full h-full object-cover" alt="Range Rover Sport Main">
+                <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6" class="w-full h-full object-cover" alt="Range Rover Sport Main">
                 <span class="absolute top-4 left-4 bg-amber-500/10 text-amber-500 border border-amber-500/20 text-xs font-bold tracking-wider px-3 py-1 rounded-md uppercase backdrop-blur-sm">Certified Used</span>
             </div>
             <!-- Thumbnails Gallery -->
             <div class="grid grid-cols-4 gap-4">
-                <div class="h-24 rounded-xl overflow-hidden border border-gold cursor-pointer"><img src="https://unsplash.com" class="w-full h-full object-cover"></div>
-                <div class="h-24 rounded-xl overflow-hidden border border-gray-900 opacity-60 hover:opacity-100 transition cursor-pointer"><img src="https://unsplash.com" class="w-full h-full object-cover"></div>
+                <div class="h-24 rounded-xl overflow-hidden border border-gold cursor-pointer"><img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6" class="w-full h-full object-cover"></div>
+                <div class="h-24 rounded-xl overflow-hidden border border-gray-900 opacity-60 hover:opacity-100 transition cursor-pointer"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935" class="w-full h-full object-cover"></div>
                 <div class="h-24 rounded-xl overflow-hidden border border-gray-900 opacity-60 hover:opacity-100 transition cursor-pointer flex items-center justify-center bg-gray-900/40 relative">
-                    <img src="https://unsplash.com" class="w-full h-full object-cover absolute inset-0 opacity-30">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" class="w-full h-full object-cover absolute inset-0 opacity-30">
                     <i class="fa-solid fa-play text-xl text-white relative z-10"></i>
                 </div>
                 <div class="h-24 rounded-xl overflow-hidden border border-gray-900 opacity-60 hover:opacity-100 transition cursor-pointer flex items-center justify-center bg-[#14161f] text-gray-400 font-bold text-xs uppercase tracking-wider">+12 Pics</div>
@@ -87,7 +98,7 @@
                 </div>
             </div>
         </div>
-    
+    </section> <!-- تمت إضافة إغلاق القسم الأول هنا -->
 
     <!-- METRICS & TECHNICAL SPECIFICATIONS BAR -->
     <section class="py-12 bg-[#12141c] border-t border-b border-gray-900 mt-6">
@@ -109,7 +120,7 @@
                 <p class="text-2xl font-black text-white">AWD / 4WD</p>
             </div>
         </div>
-    
+    </section> <!-- تمت إضافة إغلاق القسم الثاني هنا -->
 
     <!-- VEHICLE OVERVIEW & HIGHLIGHTS -->
     <section class="py-16 px-6 md:px-12 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -131,7 +142,8 @@
                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> 3D Surround Camera View</li>
             </ul>
         </div>
-    
+    </section> <!-- تمت إضافة إغلاق القسم الثالث هنا -->
 
 </body>
 </html>
+
