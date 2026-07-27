@@ -6,46 +6,33 @@
     <title>Range Rover Sport 2024 - E MOTORS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* نظام الألوان الفاخر المستقر والمدمج */
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
         body { background-color: #0b0c10; color: #ffffff; overflow-x: hidden; }
         .gold-text { color: #d4af37 !important; }
         .bg-gold { background-color: #d4af37 !important; color: #000000 !important; }
         .text-gray { color: #a0aec0; }
-        
-        /* شريط التنقل */
-        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-b: 1px solid #1a202c; background: rgba(0,0,0,0.4); position: sticky; top: 0; z-index: 50; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid #1a202c; background: rgba(0,0,0,0.4); position: sticky; top: 0; z-index: 50; }
         .logo { font-weight: 900; font-size: 24px; letter-spacing: 1px; text-decoration: none; }
         .back-link { color: #cbd5e0; text-decoration: none; font-size: 14px; font-weight: bold; }
         .back-link:hover { color: #ffffff; }
-
-        /* الهيكل الأساسي لصفحة السيارة */
         .wrapper { max-width: 1200px; margin: 30px auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
         @media (max-width: 968px) { .wrapper { grid-template-columns: 1fr; } }
-
-        /* معرض الصور السينمائي */
-        .main-img-box { relative; h-fit; border-radius: 16px; overflow: hidden; border: 1px solid #1a202c; margin-bottom: 15px; position: relative; }
+        .main-img-box { position: relative; height: fit-content; border-radius: 16px; overflow: hidden; border: 1px solid #1a202c; margin-bottom: 15px; }
         .main-img { width: 100%; height: 400px; object-fit: cover; display: block; }
-        .badge { position: absolute; top: 15px; left: 15px; background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); font-size: 12px; font-weight: bold; padding: 6px 12px; rounded-md; border-radius: 6px; }
+        .badge { position: absolute; top: 15px; left: 15px; background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); font-size: 12px; font-weight: bold; padding: 6px 12px; border-radius: 6px; }
         .thumb-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
         .thumb { height: 90px; border-radius: 8px; overflow: hidden; border: 1px solid #1a202c; cursor: pointer; }
         .thumb img { width: 100%; height: 100%; object-fit: cover; }
         .thumb.active { border-color: #d4af37; }
-
-        /* لوحة التحكم الجانبية والتسعير */
         .panel { background: #14161f; border: 1px solid #2d3748; padding: 25px; border-radius: 16px; height: fit-content; }
         .price { font-size: 32px; font-weight: 900; margin: 10px 0 20px 0; }
         .finance-box { background: #0b0c10; border: 1px solid #2d3748; padding: 15px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
         .btn { display: block; width: 100%; text-align: center; padding: 15px; border-radius: 10px; font-weight: bold; font-size: 14px; text-transform: uppercase; text-decoration: none; margin-bottom: 12px; cursor: pointer; border: none; }
-        
-        /* شريط المواصفات التقنية */
-        .specs-bar { background: #12141c; border-top: 1px solid #1a202c; border-b: 1px solid #1a202c; padding: 30px 20px; margin-top: 40px; }
+        .specs-bar { background: #12141c; border-top: 1px solid #1a202c; border-bottom: 1px solid #1a202c; padding: 30px 20px; margin-top: 40px; }
         .specs-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
         @media (max-width: 640px) { .specs-grid { grid-template-columns: repeat(2, 1fr); } }
         .spec-item h5 { font-size: 11px; text-transform: uppercase; color: #718096; margin-bottom: 5px; font-weight: bold; letter-spacing: 1px; }
         .spec-item p { font-size: 22px; font-weight: 900; color: #ffffff; }
-
-        /* تفاصيل العرض والمميزات */
         .info-section { max-width: 1200px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
         @media (max-width: 968px) { .info-section { grid-template-columns: 1fr; } }
         .features-list { list-style: none; margin-top: 15px; }
@@ -54,31 +41,25 @@
     </style>
 </head>
 <body>
-
-    <!-- NAVBAR -->
     <nav>
         <a href="index.html" class="logo gold-text">E MOTORS</a>
         <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Fleet</a>
     </nav>
 
-    <!-- VEHICLE HERO & GALLERY SECTION -->
     <div class="wrapper">
-        
-        <!-- Left: Cinematic Media Showcase -->
         <div>
             <div class="main-img-box">
-                <img src="https://unsplash.com" class="main-img" alt="Range Rover Sport Main">
+                <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&q=80" class="main-img" alt="Range Rover Sport Main">
                 <span class="badge">Certified Used</span>
             </div>
             <div class="thumb-grid">
-                <div class="thumb active"><img src="https://unsplash.com"></div>
-                <div class="thumb"><img src="https://unsplash.com"></div>
+                <div class="thumb active"><img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=300&q=80" alt="thumb 1"></div>
+                <div class="thumb"><img src="https://images.unsplash.com/photo-1519245659620-e859806a8d3b?w=300&q=80" alt="thumb 2"></div>
                 <div class="thumb" style="display: flex; align-items: center; justify-content: center; background: #1a202c; color: #cbd5e0; font-weight: bold; font-size: 20px;"><i class="fa-solid fa-play"></i></div>
                 <div class="thumb" style="display: flex; align-items: center; justify-content: center; background: #14161f; color: #718096; font-weight: bold; font-size: 12px; text-transform: uppercase;">+12 Pics</div>
             </div>
         </div>
 
-        <!-- Right: Pricing & Immediate Actions Panel -->
         <div class="panel">
             <p class="text-gray" style="font-size: 11px; text-transform: uppercase; font-weight: bold; letter-spacing: 1px;">2024 Luxury SUV</p>
             <h1 style="font-size: 28px; font-weight: 900; text-transform: uppercase; margin-top: 5px;">Range Rover Sport</h1>
@@ -97,7 +78,6 @@
         </div>
     </div>
 
-    <!-- METRICS & TECHNICAL SPECIFICATIONS BAR -->
     <div class="specs-bar">
         <div class="specs-grid">
             <div class="spec-item"><h5>Engine Power</h5><p>394 HP</p></div>
@@ -107,7 +87,6 @@
         </div>
     </div>
 
-    <!-- VEHICLE OVERVIEW & HIGHLIGHTS -->
     <div class="info-section">
         <div>
             <h2 style="font-size: 22px; text-transform: uppercase; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;"><span style="width: 4px; height: 18px; background: #d4af37; display: inline-block; border-radius: 2px;"></span> Vehicle Overview</h2>
@@ -125,6 +104,5 @@
             </ul>
         </div>
     </div>
-
 </body>
 </html>
